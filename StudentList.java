@@ -16,12 +16,13 @@ public class StudentList {
                     )
                 );
                 String r = s.readLine();
-                String[] i = r.split(",");
+                String[] i = r.split(", ");
                 for (String j : i) {
                     System.out.println(j);
                 }
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].equals("r")) {
             System.out.println("Loading data ...");
