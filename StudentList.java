@@ -73,7 +73,8 @@ public class StudentList {
                 String[] splitted = read.split(",");
                 boolean done = false;
                 String substring = args[0].substring(1);
-                for (int idx = 0; idx < splitted.length && !done; idx++) {
+                int idx;
+                for (idx = 0; idx < splitted.length && !done; idx++) {
                     if (splitted[idx].equals(substring.trim())) {
                         System.out.println("We found it!");
                         done = true;
@@ -95,6 +96,7 @@ public class StudentList {
                 char[] chArr = read.toCharArray();
                 boolean in_word = false;
                 int count = 0;
+                
                 for (char c : chArr) {
                     if (c == ' ') {
                         if (!in_word) {
