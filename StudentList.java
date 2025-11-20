@@ -16,12 +16,13 @@ public class StudentList {
                     )
                 );
                 String r = s.readLine();
-                String[] i = r.split(",");
+                String[] i = r.split(", ");
                 for (String j : i) {
                     System.out.println(j);
                 }
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].equals("r")) {
             System.out.println("Loading data ...");
@@ -32,13 +33,14 @@ public class StudentList {
                     )
                 );
                 String r = g.readLine();
-                System.out.println(r);
-                String[] i = r.split(",");
+                // System.out.println(r);
+                String[] i = r.split(", ");
                 Random x = new Random();
                 int y = x.nextInt(i.length);
                 System.out.println(i[y]);
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].contains("+")) {
             System.out.println("Loading data ...");
@@ -48,13 +50,14 @@ public class StudentList {
                 );
                 String t = args[0].substring(1);
                 Date d = new Date();
-                String df = "dd/mm/yyyy-hh:mm:ss a";
+                String df = "dd/mm/yyyy hh:mm:ss a";
                 DateFormat dateFormat = new SimpleDateFormat(df);
                 String fd = dateFormat.format(d);
                 s.write(", " + t + "\nList last updated on " + fd);
                 s.close();
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].contains("?")) {
             System.out.println("Loading data ...");
@@ -74,8 +77,9 @@ public class StudentList {
                         done = true;
                     }
                 }
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].contains("c")) {
             System.out.println("Loading data ...");
@@ -98,10 +102,11 @@ public class StudentList {
                     } else {
                         in_word = false;
                     }
-                }
-                System.out.println(count + " word(s) found " + a.length);
-            } catch (Exception e) {
+                } count++;
+                System.out.println(count + " word(s) found");
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         }
     }
