@@ -111,6 +111,8 @@ public class StudentList {
             } catch (Exception e) {
                 System.out.println("An error occurred.");
             }
+        }else {
+            System.out.println("Invalid argument.");
         }
     }
 }
