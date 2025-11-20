@@ -96,7 +96,6 @@ public class StudentList {
                 char[] chArr = read.toCharArray();
                 boolean in_word = false;
                 int count = 0;
-                
                 for (char c : chArr) {
                     if (c == ' ') {
                         if (!in_word) {
