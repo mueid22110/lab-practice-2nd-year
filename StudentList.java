@@ -100,10 +100,11 @@ public class StudentList {
                     } else {
                         in_word = false;
                     }
-                }
-                System.out.println(count + " word(s) found " + a.length);
-            } catch (Exception e) {
+                } count++;
+                System.out.println(count + " word(s) found");
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         }
     }
