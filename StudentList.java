@@ -33,13 +33,14 @@ public class StudentList {
                     )
                 );
                 String r = g.readLine();
-                System.out.println(r);
-                String[] i = r.split(",");
+                // System.out.println(r);
+                String[] i = r.split(", ");
                 Random x = new Random();
                 int y = x.nextInt(i.length);
                 System.out.println(i[y]);
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].contains("+")) {
             System.out.println("Loading data ...");
