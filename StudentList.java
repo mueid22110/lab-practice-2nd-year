@@ -22,7 +22,7 @@ public class StudentList {
                 }
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
-                
+                System.out.println("An error occurred.");
             }
         } else if (args[0].equals("r")) {
             System.out.println("Loading data ...");
@@ -40,7 +40,7 @@ public class StudentList {
                 System.out.println(i[y]);
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
-                
+                System.out.println("An error occurred.");
             }
         } else if (args[0].contains("+")) {
             System.out.println("Loading data ...");
@@ -57,7 +57,7 @@ public class StudentList {
                 s.close();
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
-                
+                System.out.println("An error occurred.");
             }
         } else if (args[0].contains("?")) {
             System.out.println("Loading data ...");
@@ -79,7 +79,7 @@ public class StudentList {
                 }
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
-                
+                System.out.println("An error occurred.");
             }
         } else if (args[0].contains("c")) {
             System.out.println("Loading data ...");
@@ -106,7 +106,7 @@ public class StudentList {
                 System.out.println(count + " word(s) found");
                 System.out.println("Data Loaded.");
             } catch (Exception e) {
-                
+                System.out.println("An error occurred.");
             }
         }
     }
