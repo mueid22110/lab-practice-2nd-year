@@ -50,13 +50,14 @@ public class StudentList {
                 );
                 String t = args[0].substring(1);
                 Date d = new Date();
-                String df = "dd/mm/yyyy-hh:mm:ss a";
+                String df = "dd/mm/yyyy hh:mm:ss a";
                 DateFormat dateFormat = new SimpleDateFormat(df);
                 String fd = dateFormat.format(d);
                 s.write(", " + t + "\nList last updated on " + fd);
                 s.close();
-            } catch (Exception e) {
                 System.out.println("Data Loaded.");
+            } catch (Exception e) {
+                
             }
         } else if (args[0].contains("?")) {
             System.out.println("Loading data ...");
